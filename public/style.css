@@ -217,4 +217,7 @@ button:hover{
     .banner{
       background-size: auto;
     }
+      .card{
+      grid-template-columns: 325px;
+    }
   }
