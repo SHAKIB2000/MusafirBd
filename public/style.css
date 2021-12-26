@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.active{
+  color:gold;
+ }
+.banner{
+    height:75vh;
+    width: 100%;
+    background-image: url(slidere.jpg);
+    background-position:bottom;
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -165px; */
+}
+.wrap{
+    text-align: center;
+    margin-top: 0;
+    background-color: grey;
+}
+.bold-line{
+    height: 3px;
+    background-color: #FF3361;
+}
+.bold-line2{
+  height: 5px;
+  background-color: #FF3361;
+}
+.heading{
+    margin-top: 0;
+    padding: 10px;
+    color: white;
+    background-color: #4B4847;
+    font-family: 'Kalpurush', Arial, sans-serif !important;
+}
+.head{
+  margin-top: 0;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow:5px 5px 15px rgba(0,0,0,0.9);
+  font-family: 'CharuChandan3D', Arial, sans-serif !important;
+}
+.dist{
+  margin-top: 30px;
+  padding: 10px;
+  color: #FFC300 ;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow:2px 2px 8px rgba(0,0,0,0.9);
+  font-family: 'Bangla', Arial, sans-serif !important;
+}
+button{
+    margin: 4px;
+    background-color:#FF3361;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s; 
+    font-size: large;
+    cursor: pointer;
+    font-family: 'Kalpurush', Arial, sans-serif !important;
+}
+button:hover{
+    transform: scale(1.1);
+}
+  
+  .search_box{
+    width: 50%;
+    position: relative;
+  }
+  
+  .search_box input[type="text"]{
+    width: 100%;
+    padding: 20px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.3);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+  }
+  
+  .fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #fff;
+  }
+  ::-moz-placeholder {
+    color: #fff;
+  }
+  :-ms-input-placeholder {
+    color: #fff;
+  }
+
+
+.display{
+  display: inline-block;
+
+}
+.allcards{
+  text-align: center;
+}
+.cardheading{
+  margin-top: 10px;
+  padding: 10px;
+  color: #000046;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow:5px 5px 15px rgba(0,0,0,0.9);
+  font-family: 'CharuChandan3D', Arial, sans-serif !important;
+}
+
+  .card {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 350px;
+    grid-template-rows: 240px 160px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+  }
+  .card-image {
+    grid-area: image;
+  }
+  .card-text {
+    grid-area: text;
+  }
+  .card-stats {
+    grid-area: stats; 
+  }
+  .card-image {
+    grid-area: image;
+    /* background: url("./Images/img1.jpg"); */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* background-size: cover; */
+    width: 100%;
+  }
+  .card-text {
+    grid-area: text;
+    margin: 25px;
+  }
+  
+  .card-text p {
+    color: grey;
+    font-size:75%;
+    font-weight: 300;
+    font-family: 'Kalpurush', Arial, sans-serif !important;
+  }
+  .card-text h2 {
+    margin-top:0px;
+    font-size: 28px;
+    font-family: 'Bangla', Arial, sans-serif !important;
+  }
+  .card-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255, 7, 110);
+  }
+  .card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    color: white;
+    padding:10px;
+  }
+  .card:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .overflow{
+    overflow: hidden;
+  }
+  .card-image:hover{
+    transform: scale(1.3);
+    transition: 0.5s ease;
+  }
+  .card {
+  
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin:10px;
+  }
+
+  @media screen and (max-width: 600px){
+    .search_box{
+      width: 95%;
+    }
+    .banner{
+      background-size: auto;
+    }
+    .card{
+      grid-template-columns: 325px;
+    }
+  }
